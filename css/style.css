@@ -1,0 +1,367 @@
+/*========================================= global ===========================================*/
+
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+
+body {
+    margin: 0 40px;
+    max-width: 1400px;
+
+}
+@media screen and (min-width: 1440px) {
+    body{
+        margin: 0 auto;
+    }
+}
+body *{
+    font-family: 'raleway', sans-serif;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*========================================= header ===========================================*/
+header nav{
+    height: 74px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 40%;
+}
+#menu {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+#menu li {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+#menu a {
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    border-top: 4px solid transparent;
+}
+#menu a:hover{
+    color: #0065FC;
+    border-top: 4px solid #0065FC;
+}
+section#titre{
+    margin-bottom: 30px;
+}
+/*=================================recherche====================================*/
+section#recherche form{
+    display: flex;
+    height: 45px;
+    margin-bottom: 20px;
+}
+#recherche label{
+    padding: 1rem;
+    background-color: #F2F2F2;
+    border-radius: 10px 0 0 10px;
+}
+#recherche input{
+    width: 200px;
+    padding: 1rem;
+    border: 1px solid lightgray;
+    border-left: none;
+    border-right: none;
+}
+#recherche input::placeholder {
+    color: black;
+    font-weight:bold;
+
+}
+#recherche button{
+    width: auto;
+    padding: 1rem;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    background-color: #0065FC;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+}
+#recherche button i{
+    display: none;
+}
+/*===================================Filter=======================================*/
+section#filter{
+    display: flex;
+}
+#filter .buttons{
+    display: flex;
+    align-items: center;
+}
+#filter button {
+    padding: 20px;
+    margin: 0 35px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    border: 2px solid #D9D9D9;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 20px 20px 20px 20px; 
+}
+#filter button:hover{
+    
+    background-color: #DEEBFF;
+    cursor: pointer;
+}
+#filter button i {
+    margin-right: 12px;
+    color: #0065FC;
+}
+/*==================================bulle info====================================*/
+section#info{
+    display: flex;
+    align-items: center;
+    margin: 25px 0px;
+}
+#info i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    border: solid 1px #D9D9D9;
+    border-radius: 50%;
+    color: #0065FC;
+}
+/*==================================Main=========================================*/
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+main .container_section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+section#lodging, section#famous{
+    padding: 30px;
+    border: 1px solid transparent;
+    border-radius:20px;
+    background-color: #F2F2F2;
+}
+section#lodging{
+    width: 63%;
+}
+section#famous{
+    width: 35%;
+}
+main section h2{
+    font-size: 22px;
+}
+main section h3{
+    font-size: 15px;
+}
+main section p{
+    font-size: 13px;
+}
+#lodging .cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+main .card{
+    padding: 5px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 3px 3px 20px lightgrey;
+    background-color: white;
+}
+main .fa-solid.fa-star.blue {
+    color: #0065FC;
+}
+main .fa-solid.fa-star.grey {
+    color: lightgrey;
+}
+/*======Lodging=====*/
+#lodging .cards_row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: transparent;
+    border-radius: 10px 10px 10px 10px; 
+    margin-bottom: 20px;
+}
+#lodging .card{
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    border: transparent;
+}
+#lodging .card img{
+    width: 100%;
+    height: 100px;
+    max-height: 100px;
+    min-height: 100px;
+    object-fit:cover;
+    border: 1px;
+    border-radius: 10px 10px 0 0;
+}
+#lodging .card .description{
+    height: 100%;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#lodging h3{
+    margin: unset;
+    margin-top: 10px;
+}
+#lodging .card p{
+    margin: unset;
+    margin-top: 5px;
+}
+#lodging .stars{
+    display: flex;
+    justify-content: flex-start;
+    margin: 8px 0;
+    font-size: 13px;
+}
+#lodging .info_plus{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+/*=======Famous=======*/
+#famous .titre{
+    display: flex;
+    justify-content: space-between;
+}
+#famous .fa-solid.fa-chart-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0065FC;
+}
+#famous .container_cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 30px;
+}
+#famous .cards{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: transparent;
+    border-radius: 10px 10px 10px 10px; 
+}
+#famous .card{
+    width: 100%;
+    height: 130px;
+    margin-bottom: 30px;
+    display: flex;
+    border: transparent;
+}
+#famous .card img{
+    width: 35%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px;
+    border-radius: 10px 0 0 10px;
+}
+#famous .container_description{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    flex-direction: column;
+}
+#famous .description{
+    height: 100%;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#famous h3{
+    margin: unset;
+    margin-top: 5px;
+}
+#famous p{
+    margin: unset;
+    margin-top: 5px;
+}
+#famous .stars{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-size: 13px;
+}
+/*=========Activités=========*/
+section#activites{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+#activites .cards{
+    display: flex;
+    justify-content: space-between;
+}
+#activites .card{
+    padding: unset;
+    width: 22%;
+    border: transparent;
+    border-radius: 20px;
+}
+#activites img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0 ;
+}
+#activites h3{
+    padding-left: 10px;
+    width: 100%;
+    font-size: 16px;
+}
+/*=======================Footer======================*/
+footer{
+    background-color: #F2F2F2;
+    padding: 40px 80px;
+    margin-top: 50px;
+    display: flex;
+}
+footer div{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+} 
+footer h2{
+    font-size: 17px;
+}
+footer a{
+    margin: 10px 0;
+    font-size: 15px;
+}

@@ -1,0 +1,45 @@
+/*===============header================*/
+#filter button {
+    margin: 0 10px;
+}
+/*===============main==================*/
+main .container_section{
+    display: flex;
+    flex-direction: column;
+}
+/*=====lodging====*/
+section#lodging{
+    width: 100%;
+    margin-bottom: 30px;
+}
+/*=====famous====*/
+section#famous{
+    width: 100%;
+    margin: 50px 0;
+    padding: 10px;
+}
+#famous .card {
+    width: 100%;
+    margin-right: 10px;
+}
+#famous .cards{
+    flex-direction: row;
+    align-items: center;
+}
+#famous .card img {
+    height: 100%;
+}
+/*=====activités====*/
+#activites .card {
+    width: 20%;
+}
+#activites img{
+    height: 200px;
+}
+#activites h2{
+    display: unset;
+}
+/*=================footer================*/
+footer #information{
+    gap: 6rem;
+}

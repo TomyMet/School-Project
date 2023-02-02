@@ -1,0 +1,202 @@
+body {
+    margin: unset;
+}
+/*======================header=====================*/
+#titre,#recherche,#filter,#info{
+    padding: 0 20px;
+}
+header nav{
+    height: unset;
+    flex-direction: column;
+}
+.logo {
+    width: 61px;
+    margin-top: 21px;
+}
+#menu {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+#menu li {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+#menu a {
+    width: 100%;
+    height: 100%;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: unset ;
+    border-bottom: 4px solid #F2F2F2;
+}
+#menu a:hover{
+    border-top: unset;
+    border-bottom: solid 4px #0065FC;
+}
+/*===========recherche============*/
+section#recherche form{
+    height: 55px;
+}
+#recherche label, #recherche input, #recherche button{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#recherche input, label i, button i, #info span{
+    width: 100%;
+    font-size: 19px;
+}
+#recherche label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#recherche button span{
+    display: none;
+}
+#recherche button i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/*===========filters=============*/
+#filter{
+    width: 100%;
+    flex-direction: column;
+}
+#filter .buttons{
+    width: 100%;
+    flex-wrap: wrap;
+}
+#filter button{
+    padding: 20px 10px;
+    width: 47%;
+    height: 50px;
+    margin: 10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+@media screen and (max-width: 350px) {
+    #filter button{
+        width: auto;
+    }
+}
+#filter button i {
+    width: auto;
+    margin-right: 12px;
+    color: #0065FC;
+    font-size: 24px;
+}
+#filter button span{
+    text-align: left;
+}
+/*============info==============*/
+section#info{
+    margin-left: 20px;
+    align-items: flex-start;
+}
+/*=======================main===========================*/
+main .container_section{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.container_section h3{
+    font-size: 22px;
+}
+.container_section p{
+    font-size: 18px;
+}
+#famous .stars{
+    font-size: 18px;
+}
+section#lodging, section#famous, section#activites{
+    width: 100%;
+    padding: 0 25px;
+}
+/*=============famous==================*/
+section#famous{
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+    border: unset;
+    border-radius: unset;
+}
+#famous .card{
+    height: 150px;
+    margin-bottom: 15px;
+}
+#famous .card img{
+    height: 100%;
+    width: 40%;
+    min-width: 40%;
+}
+#famous h3{
+    font-size: 15px;
+}
+/*=============lodging===============*/
+section#lodging{
+    background: unset;
+}
+#lodging .cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#lodging .cards_row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+}
+#lodging .card{
+    width: 100%;
+    margin-bottom: 15px;
+}
+#lodging .card img{
+    height: 145px;
+}
+#lodging .stars{
+    font-size: 16px;
+}
+#lodging .info_plus{
+    display: none;
+}
+/*================Activités============*/
+section#activites {
+    margin-top: 70px;
+}
+#activites .cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#activites .card{
+    width: 100%;
+    margin-bottom: 10px;
+}
+#activites .card img{
+    width: 100%;
+    height: 165px;
+}
+#activites h3{
+    font-size: 20px;
+}
+#activites h2{
+width: 28%;
+}
+footer{
+    padding: 40px 25px;
+    flex-direction: column;
+}
